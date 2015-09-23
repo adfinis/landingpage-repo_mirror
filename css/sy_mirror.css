@@ -1,0 +1,60 @@
+@media only screen and (min-width: 435px) and (max-width: 899px) {
+  .page {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .page {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .page-content-header {
+    margin-top: 20px;
+  }
+}
+
+p {
+  color: rgb(61, 61, 61);
+}
+
+.page {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.mirror-wrapper {
+  background: #eee;
+  display: inline-flex;
+  width: 100%;
+  border-radius: 5px;
+  margin: 3px 0 3px 0;
+  padding: 3px 0 3px 0;
+  flex-wrap: nowrap;
+}
+.mirror-wrapper p {
+  margin: 0;
+}
+
+.mirror-header {
+  flex: 1 1 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 15px;
+}
+
+.mirror-content {
+  flex: 3 1 auto;
+  padding-left: 3px;
+}
+
+/* vim: set autoindent expandtab ts=2 sw=2 sts=2: */
