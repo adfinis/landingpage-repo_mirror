@@ -57,4 +57,11 @@ p {
   padding-left: 3px;
 }
 
+.page-content-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /* vim: set autoindent expandtab ts=2 sw=2 sts=2: */
