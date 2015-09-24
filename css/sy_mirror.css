@@ -1,10 +1,10 @@
-@media only screen and (min-width: 435px) and (max-width: 899px) {
+@media only screen and (min-width: 435px) and (max-width: 991px) {
   .page {
     width: 90%;
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .page {
     width: 70%;
   }
@@ -39,7 +39,7 @@ p {
   display: flex;
   width: 100%;
   border-radius: 5px;
-  margin: 3px 0 3px 0;
+  margin: 4px 0 4px 0;
   padding: 3px 0 3px 0;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
@@ -53,7 +53,10 @@ p {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
-  flex: 0 0 80px;
+  flex: 1 1 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -61,10 +64,13 @@ p {
 }
 
 .mirror-content {
-  -webkit-box-flex: 3;
-  -webkit-flex: 3 1 auto;
-  -ms-flex: 3 1 auto;
-  flex: 3 1 auto;
+  -webkit-box-flex: 6;
+  -webkit-flex: 6 1 auto;
+  -ms-flex: 6 4 auto;
+  flex: 6 4 auto;
+  -webkit-flex-basis: 0;
+  -ms-flex-basis: 0;
+  flex-basis: 0;
   padding-left: 3px;
 }
 
