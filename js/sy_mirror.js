@@ -53,6 +53,16 @@ var MIRRORS = [
         statisticsUrl:     '/centos.json',
         sizeElement:       'mirror-centos-size',
         timestampElement:  'mirror-centos-lastsync'
+    },
+    {
+        statisticsUrl:     '/debian.json',
+        sizeElement:       'mirror-debian-size',
+        timestampElement:  'mirror-debian-lastsync'
+    },
+    {
+        statisticsUrl:     '/ubuntu.json',
+        sizeElement:       'mirror-ubuntu-size',
+        timestampElement:  'mirror-ubuntu-lastsync'
     }
 ]
 
