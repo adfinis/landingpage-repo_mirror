@@ -93,8 +93,13 @@ p {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
 
-  background-color: rgb(235, 235, 235);
+.footer-maxwidth {
+  flax-basis: 100%;
+}
+.footer-maxwidth p {
+  margin: 0 0 5px 0;
 }
 
 /* vim: set autoindent expandtab ts=2 sw=2 sts=2: */
