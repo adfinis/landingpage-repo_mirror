@@ -58,11 +58,6 @@ var MIRRORS = [
         statisticsUrl:     '/debian.json',
         sizeElement:       'mirror-debian-size',
         timestampElement:  'mirror-debian-lastsync'
-    },
-    {
-        statisticsUrl:     '/ubuntu.json',
-        sizeElement:       'mirror-ubuntu-size',
-        timestampElement:  'mirror-ubuntu-lastsync'
     }
 ]
 
