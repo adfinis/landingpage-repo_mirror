@@ -58,6 +58,11 @@ var MIRRORS = [
         statisticsUrl:     '/debian.json',
         sizeElement:       'mirror-debian-size',
         timestampElement:  'mirror-debian-lastsync'
+    },
+    {
+        statisticsUrl:     '/fedora.json',
+        sizeElement:       'mirror-fedora-size',
+        timestampElement:  'mirror-fedora-lastsync'
     }
 ]
 
