@@ -1,10 +1,11 @@
 /*
- * File: js/sy_mirror.js
+ * File: js/symirror.js
  * Authors: 
  * - Damian Senn <damian.senn@adfinis-sygroup.ch>
  * - Philipp Marmet <philipp.marmet@adfinis-sygroup.ch>
  *
 */
+;(function() {
 
 function getServerFile(url, doneCallback) {
     var xhr = new XMLHttpRequest()
@@ -67,4 +68,16 @@ MIRRORS.forEach(function(options) {
     mirror.render()
 })
 
+function showHelp(e) {
+    var el = document.getElementById("helpbox-" + e)
+    el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible"
+    el.addEventListener('click', function(e) {
+        if (e.target.className === 'helpbox') {
+            el.style.visibility = 'hidden'
+        }
+    })
+}
+window.showHelp = showHelp
+
+})();
 // vim: set autoindent expandtab ts=4 sw=4 sts=4:

@@ -1,0 +1,154 @@
+@media only screen and (max-width: 991px) {
+  .helpbox div {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 435px) and (max-width: 991px) {
+  .page {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .page {
+    width: 70%;
+  }
+  .helpbox div {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .page {
+    width: 60%;
+  }
+  .helpbox div {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .page-content-header {
+    margin-top: 20px;
+  }
+}
+
+p {
+  color: rgb(61, 61, 61);
+}
+
+.page {
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+/* helpbox */
+.helpbox {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(190, 190, 190, 0.5)
+}
+.helpbox div {
+  margin: 100px auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+.helpbox p {
+  font-family: "Courier New", Courier, monospace;
+}
+.helpbox code,pre {
+  margin: 0;
+  padding: 0 1em;
+  line-height: 1;
+}
+
+/* page footer */
+.page-content-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.footer-maxwidth {
+  flax-basis: 100%;
+}
+.footer-maxwidth p {
+  margin: 0 0 5px 0;
+}
+
+/* grid cell */
+.mirror-wrapper {
+  background: rgb(235, 235, 235);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin: 3px 0;
+}
+.mirror-wrapper p {
+  margin: 0;
+}
+.mirror-link-wrapper:hover, .mirror-help-wrapper:hover {
+  background-color: rgb(215, 215, 215);
+}
+.mirror-link-wrapper:hover {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.mirror-help-wrapper:hover {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mirror-link-wrapper {
+  flex: 6 1 auto;
+  display: flex;
+}
+.mirror-logo {
+  flex: 1 1 auto;
+  flex-basis: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin: 15px;
+}
+.mirror-content {
+  flex: 6 4 auto;
+  flex-basis: 0;
+}
+
+.mirror-help-wrapper {
+  display: flex;
+  flex: 1 4 auto;
+  align-items: center;
+  justify-content: center;
+}
+.mirror-help-wrapper div {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* vim: set autoindent expandtab ts=2 sw=2 sts=2: */

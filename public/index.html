@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adfinis SyGroup Mirror</title>
+    <meta name="author" content="Adfinis SyGroup AG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="assets/styles.min.css">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- .page-viewport wraps the whole content -->
+      <div class="page-viewport">
+        <!-- .page-content contains all the page specific content -->
+        <main class="page-main">
+          <section class="page-content">
+            <header class="page-content-header">
+              <h1>Welcome to pkg.adfinis-sygroup.ch</h1>
+            </header>
+
+            <section class="page-content-main">
+              <h4>Official mirrors</h4>
+              <div class="grid">
+                <div class="grid-cell grid-cell--12of12">
+                  <p>Currently, we do not have any official mirrors. See below for unofficial mirrors.</p>
+                </div>
+              </div>
+
+              <h4>Unofficial mirrors</h4>
+              <div class="grid grid--12of12 grid-xs--12of12 grid-md--6of12 grid-lg--6of12">
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/archlinux">
+                      <div class="mirror-logo" style="background-image: url(icons/archlinux.png)">&nbsp;</div>
+                      <div class="mirror-content">
+                        <h6>Arch Linux</h6>
+                        <p>Mirror for Arch Linux</p>
+                        <p>Size: <span id="mirror-archlinux-size">unknown</span></p>
+                        <p>Last sync: <span id="mirror-archlinux-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('archlinux'); return false;">
+                      <div>
+                        ?
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/centos">
+                      <div class="mirror-logo" style="background-image: url(icons/centos.png)">&nbsp;</div>
+                      <div class="mirror-content">
+                      <h6>CentOS</h6>
+                      <p>Mirror for CentOS</p>
+                      <p>Size: <span id="mirror-centos-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-centos-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('centos'); return false;">
+                      <div>
+                        ?
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/debian">
+                      <div class="mirror-logo" style="background-image: url(icons/debian.png)">&nbsp;</div>
+                      <div class="mirror-content">
+                      <h6>Debian</h6>
+                      <p>Mirror for Debian</p>
+                      <p>Size: <span id="mirror-debian-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-debian-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('debian'); return false;">
+                      <div>
+                        ?
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <footer class="page-content-footer">
+              <div class="footer-maxwidth">
+                <p>The hardware and bandwidth for this mirror is donated by <a href="https://www.adfinis-sygroup.ch">Adfinis SyGroup AG</a> as a service to the open-source community.</p>
+              </div>
+              <div>
+                <small>&copy; 2015 Adfinis SyGroup AG</small>
+              </div>
+              <div>
+                <small>Provided by: </small>
+                <a href="https://www.adfinis-sygroup.ch/" alt="Adfinis SyGroup AG"><img class="footer-logo" src="icons/adsy.png" width="100px" height="20px" align="top"></a>
+              </div>
+            </footer>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="helpbox" id="helpbox-archlinux">
+      <div>
+        <h3>Arch Linux help</h3>
+
+        <p>Add the following line to your <b>/etc/pacman.d/mirrorlist</b>:</p>
+        <pre><code>
+Server = http://pkg.adfinis-sygroup.ch/archlinux/$repo/os/$arch
+        </code></pre>
+
+      </div>
+    </div>
+    <div class="helpbox" id="helpbox-centos">
+      <div>
+        <h3>CentOS help</h3>
+
+        <p class="helpbox-text">
+          Until we are officially listed, you can change the baseurl in <b>/etc/yum.repos.d/CentOS-Base.repo</b>:</p>
+        <pre><code>
+baseurl=http://pkg.adfinis-sygroup.ch/centos/$releasevers/os/$basearch
+        </code></pre>
+      </div>
+    </div>
+    <div class="helpbox" id="helpbox-debian">
+      <div>
+        <h3>Debian help</h3>
+
+        <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <br>
+          Replace "jessie" with your version.</p>
+        <pre><code>
+deb http://pkg.adfinis-sygroup.ch/debian/ jessie main non-free contrib
+deb-src http://pkg.adfinis-sygroup.ch/debian/ jessie main non-free contrib
+
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+
+deb http://pkg.adfinis-sygroup.ch/debian/ jessie-updates main contrib non-free
+deb-src http://pkg.adfinis-sygroup.ch/debian/ jessie-updates main contrib non-free
+        </code></pre>
+      </div>
+    </div>
+
+    <script src="assets/scripts.min.js"></script>
+  </body>
+</html>
+
+<!-- vim: set autoindent expandtab ts=2 sw=2 sts=2: -->

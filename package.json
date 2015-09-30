@@ -1,0 +1,23 @@
+{
+  "name": "adsy-mirror-landingpage.src",
+  "version": "1.0.0",
+  "description": "sadf",
+  "main": "Brocfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.adfinis-sygroup.ch:philippm/adsy-mirror-landingpage.src.git"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "broccoli": "^0.16.8",
+    "broccoli-concat": "0.0.13",
+    "broccoli-cssnano": "^2.0.1",
+    "broccoli-env": "0.0.1",
+    "broccoli-funnel": "^0.2.8",
+    "broccoli-merge-trees": "^0.2.3"
+  }
+}
