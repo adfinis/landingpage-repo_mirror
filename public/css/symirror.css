@@ -124,31 +124,57 @@ p {
 }
 
 .mirror-link-wrapper {
-  flex: 6 1 auto;
+  -webkit-box-flex: 6;
+  -webkit-flex: 6 1 auto;
+      -ms-flex: 6 1 auto;
+          flex: 6 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .mirror-logo {
-  flex: 1 1 auto;
-  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   margin: 15px;
 }
 .mirror-content {
-  flex: 6 4 auto;
-  flex-basis: 0;
+  -webkit-box-flex: 6;
+  -webkit-flex: 6 4 auto;
+      -ms-flex: 6 4 auto;
+          flex: 6 4 auto;
+  -webkit-flex-basis: 0;
+      -ms-flex-preferred-size: 0;
+          flex-basis: 0;
 }
 
 .mirror-help-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1 4 auto;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 4 auto;
+      -ms-flex: 1 4 auto;
+          flex: 1 4 auto;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .mirror-help-wrapper div {
   font-size: 50px;
   text-align: center;
 }
-
-/* vim: set autoindent expandtab ts=2 sw=2 sts=2: */
