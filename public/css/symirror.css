@@ -111,6 +111,9 @@ p {
 .mirror-wrapper p {
   margin: 0;
 }
+.mirror-link-wrapper, .mirror-help-wrapper {
+  padding: 3px 0;
+}
 .mirror-link-wrapper:hover, .mirror-help-wrapper:hover {
   background-color: rgb(215, 215, 215);
 }
