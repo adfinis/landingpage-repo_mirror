@@ -81,6 +81,11 @@ function showHelp(e) {
             el.style.visibility = 'hidden'
         }
     })
+    window.addEventListener('keydown', function (e) {
+        if (e.keyCode == 27) {
+            el.style.visibility = 'hidden'
+        }
+    })
 }
 window.showHelp = showHelp
 
