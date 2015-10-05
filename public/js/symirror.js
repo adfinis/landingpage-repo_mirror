@@ -46,19 +46,24 @@ Mirror.prototype.render = function() {
 
 var MIRRORS = [
     {
-        statisticsUrl:     '/archlinux.json',
+        statisticsUrl:     '/mirror/archlinux.json',
         sizeElement:       'mirror-archlinux-size',
         timestampElement:  'mirror-archlinux-lastsync'
     },
     {
-        statisticsUrl:     '/centos.json',
+        statisticsUrl:     '/mirror/centos.json',
         sizeElement:       'mirror-centos-size',
         timestampElement:  'mirror-centos-lastsync'
     },
     {
-        statisticsUrl:     '/debian.json',
+        statisticsUrl:     '/mirror/debian.json',
         sizeElement:       'mirror-debian-size',
         timestampElement:  'mirror-debian-lastsync'
+    },
+    {
+        statisticsUrl:     '/mirror/ubuntu.json',
+        sizeElement:       'mirror-ubuntu-size',
+        timestampElement:  'mirror-ubuntu-lastsync'
     }
 ]
 

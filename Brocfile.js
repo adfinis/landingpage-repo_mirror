@@ -32,7 +32,7 @@ trees.push(public)
 
 if (require('broccoli-env').getEnv() == 'development') {
     var fixtures = funnel('fixtures', {
-        destDir: '.',
+        destDir: './mirror/',
         include: ['*.json']
     })
     trees.push(fixtures)

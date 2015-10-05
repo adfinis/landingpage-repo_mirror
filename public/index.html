@@ -88,6 +88,25 @@
                   </div>
                 </div>
 
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/ubuntu">
+                      <div class="mirror-logo" style="background-image: url(icons/ubuntu.png)">&nbsp;</div>
+                      <div class="mirror-content">
+                      <h6>Ubuntu</h6>
+                      <p>Mirror for Ubuntu</p>
+                      <p>Size: <span id="mirror-ubuntu-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-ubuntu-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('ubuntu'); return false;">
+                      <div>
+                        ?
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
               </div>
             </section>
 
@@ -107,6 +126,7 @@
         </main>
       </div>
     </div>
+
     <div class="helpbox" id="helpbox-archlinux">
       <div>
         <h3>Arch Linux help</h3>
@@ -118,6 +138,7 @@ Server = http://pkg.adfinis-sygroup.ch/archlinux/$repo/os/$arch
 
       </div>
     </div>
+
     <div class="helpbox" id="helpbox-centos">
       <div>
         <h3>CentOS help</h3>
@@ -129,12 +150,13 @@ baseurl=http://pkg.adfinis-sygroup.ch/centos/$releasevers/os/$basearch
         </code></pre>
       </div>
     </div>
+
     <div class="helpbox" id="helpbox-debian">
       <div>
         <h3>Debian help</h3>
 
         <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <br>
-          Replace "jessie" with your version.</p>
+          Replace "jessie" with your release.</p>
         <pre><code>
 deb http://pkg.adfinis-sygroup.ch/debian/ jessie main non-free contrib
 deb-src http://pkg.adfinis-sygroup.ch/debian/ jessie main non-free contrib
@@ -144,6 +166,33 @@ deb-src http://security.debian.org/ jessie/updates main
 
 deb http://pkg.adfinis-sygroup.ch/debian/ jessie-updates main contrib non-free
 deb-src http://pkg.adfinis-sygroup.ch/debian/ jessie-updates main contrib non-free
+        </code></pre>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-ubuntu">
+      <div>
+        <h3>Ubuntu help</h3>
+
+        <p class="helpbox-text">
+          Add the following lines to your <b>/etc/apt/sources.list</b>: <br>
+          Replace "vivid" with your release.</p>
+        <pre><code>
+deb http://pkg.adfinis-sygroup.ch/ubuntu/ vivid main restricted universe multiverse
+# deb-src http://pkg.adfinis-sygroup.ch/ubuntu/ vivid main restricted universe multiverse
+
+deb http://pkg.adfinis-sygroup.ch/ubuntu/ vivid-updates main restricted universe multiverse
+# deb-src http://pkg.adfinis-sygroup.ch/ubuntu/ vivid-updates main restricted universe multiverse
+
+
+deb http://pkg.adfinis-sygroup.ch/ubuntu/ vivid-backports main restricted universe multiverse
+# deb-src http://pkg.adfinis-sygroup.ch/ubuntu/ vivid-backports main restricted universe multiverse
+
+deb http://pkg.adfinis-sygroup.ch/ubuntu vivid-security main restricted universe multiverse
+# deb-src http://pkg.adfinis-sygroup.ch/ubuntu vivid-security main restricted universe multiverse
+
+deb http://pkg.adfinis-sygroup.ch/ubuntu vivid partner
+# deb-src http://pkg.adfinis-sygroup.ch/ubuntu vivid partner
         </code></pre>
       </div>
     </div>
