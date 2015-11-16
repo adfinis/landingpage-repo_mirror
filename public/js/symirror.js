@@ -1,6 +1,6 @@
 /*
  * File: js/symirror.js
- * Authors: 
+ * Authors:
  * - Damian Senn <damian.senn@adfinis-sygroup.ch>
  * - Philipp Marmet <philipp.marmet@adfinis-sygroup.ch>
  *
@@ -76,6 +76,7 @@ MIRRORS.forEach(function(options) {
 function showHelp(e) {
     var el = document.getElementById("helpbox-" + e)
     el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible"
+    el.scrollIntoView()
     el.addEventListener('click', function(e) {
         if (e.target.className === 'helpbox') {
             el.style.visibility = 'hidden'
