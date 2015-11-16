@@ -144,7 +144,8 @@ Server = http://pkg.adfinis-sygroup.ch/archlinux/$repo/os/$arch
         <h3>CentOS help</h3>
 
         <p class="helpbox-text">
-          Until we are officially listed, you can change the baseurl in <b>/etc/yum.repos.d/CentOS-Base.repo</b>:</p>
+          Since we are officially listed, you don't need to configure anything special. Yum gets a computed list from <a href="http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os">http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os</a>.</p>
+          <p>If you wish, you can change the baseurl in <b>/etc/yum.repos.d/CentOS-Base.repo</b>:</p>
         <pre><code>
 baseurl=http://pkg.adfinis-sygroup.ch/centos/$releasevers/os/$basearch
         </code></pre>
