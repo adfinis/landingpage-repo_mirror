@@ -150,6 +150,9 @@ h4 {
   display: -ms-flexbox;
   display: flex;
 }
+.mirror-logo::before {
+  content: '\a0';
+}
 .mirror-logo {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -162,6 +165,7 @@ h4 {
   background-size: contain;
   background-position: center center;
   margin: 15px;
+  font-size: 3em;
 }
 .mirror-content {
   -webkit-box-flex: 6;
@@ -194,4 +198,5 @@ h4 {
 .mirror-help-wrapper div {
   font-size: 50px;
   text-align: center;
+  margin: 0.2em;
 }
