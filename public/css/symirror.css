@@ -70,11 +70,17 @@ h4 {
 }
 .helpbox p {
   font-family: "Courier New", Courier, monospace;
+  margin-bottom: 1em;
 }
 .helpbox code,pre {
   margin: 0;
   padding: 0 1em;
   line-height: 1;
+}
+.helpbox ul {
+  padding-left: 1em;
+  padding-left: -webkit-calc(1em + 2px) !important;
+  padding-left: calc(1em + 2px) !important;
 }
 
 /* page footer */
