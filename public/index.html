@@ -106,9 +106,24 @@
               <h4>Unofficial mirrors</h4>
               <div class="grid grid--12of12 grid-xs--12of12 grid-md--6of12 grid-lg--6of12">
 
-                <p class="nogrid-p">
-                  No unofficial mirrors available at this moment
-                </p>
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/epel">
+                      <div class="mirror-logo" style="background-image: url(icons/epel.png)"></div>
+                      <div class="mirror-content">
+                        <h6>EPEL</h6>
+                        <p>Mirror for EPEL</p>
+                        <p>Size: <span id="mirror-epel-size">unknown</span></p>
+                        <p>Last sync: <span id="mirror-epel-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('epel'); return false;">
+                      <div>
+                        ?
+                      </div>
+                    </a>
+                  </div>
+                </div>
 
               </div>
             </section>
@@ -198,6 +213,22 @@ deb-src http://pkg.adfinis-sygroup.ch/debian/ jessie-updates main contrib non-fr
               </li>
             </ul>
           </p>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-epel">
+      <div>
+        <h3>EPEL help</h3>
+
+        <p>Install the corresponding package on your system:</p>
+        <pre><code>
+yum install http://pkg.adfinis-sygroup.ch/epel/epel-release-latest-5.noarch.rpm
+yum install http://pkg.adfinis-sygroup.ch/epel/epel-release-latest-6.noarch.rpm
+yum install http://pkg.adfinis-sygroup.ch/epel/epel-release-latest-7.noarch.rpm
+        </code></pre><br>
+
+          <h3>Additional information</h3>
+          <p>There is no additional information available.</p>
       </div>
     </div>
 
