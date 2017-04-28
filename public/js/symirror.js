@@ -71,6 +71,11 @@ var MIRRORS = [
         timestampElement:  'mirror-epel-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/nodejs.json',
+        sizeElement:       'mirror-nodejs-size',
+        timestampElement:  'mirror-nodejs-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/ubuntu.json',
         sizeElement:       'mirror-ubuntu-size',
         timestampElement:  'mirror-ubuntu-lastsync'

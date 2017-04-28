@@ -127,6 +127,25 @@
 
                 <div class="grid-cell">
                     <div class="mirror-wrapper">
+                        <a class="mirror-link-wrapper" href="/nodejs">
+                            <div class="mirror-logo" style="background-image: url(icons/nodejs.png)"></div>
+                            <div class="mirror-content">
+                                <h6>NodeJS</h6>
+                                <p>Mirror for NodeJS</p>
+                                <p>Size: <span id="mirror-nodejs-size">unknown</span></p>
+                                <p>Last sync: <span id="mirror-nodejs-lastsync">unknown</span></p>
+                            </div>
+                        </a>
+                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('nodejs'); return false;">
+                            <div>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-cell">
+                    <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/debian-security">
                             <div class="mirror-logo" style="background-image: url(icons/debian.png)"></div>
                             <div class="mirror-content">
@@ -269,6 +288,22 @@ yum install http://pkg.adfinis-sygroup.ch/epel/epel-release-latest-7.noarch.rpm
               </li>
             </ul>
           </p>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-nodejs">
+      <div>
+        <h3>nodejs help</h3>
+        <p>NodeJS 7.x is mirrored for the following Distributions:<br>
+        Ubuntu: sid, trusty, xenial, yakkety and zesty<br>
+        Debian: jessie</p>
+
+        <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
+        <p>Replace "jessie" with your corresponding release.</p>
+        <pre><code>
+deb http://pkg.adfinis-sygroup.ch/nodejs/node_7.x jessie main
+        </code></pre><br>
+        <p></p>
       </div>
     </div>
 
