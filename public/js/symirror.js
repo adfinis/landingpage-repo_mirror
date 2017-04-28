@@ -66,6 +66,11 @@ var MIRRORS = [
         timestampElement:  'mirror-debsec-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/dotdeb.json',
+        sizeElement:       'mirror-dotdeb-size',
+        timestampElement:  'mirror-dotdeb-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/epel.json',
         sizeElement:       'mirror-epel-size',
         timestampElement:  'mirror-epel-lastsync'
