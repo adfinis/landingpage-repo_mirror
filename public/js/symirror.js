@@ -61,6 +61,11 @@ var MIRRORS = [
         timestampElement:  'mirror-debian-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/debian_security.json',
+        sizeElement:       'mirror-debsec-size',
+        timestampElement:  'mirror-debsec-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/epel.json',
         sizeElement:       'mirror-epel-size',
         timestampElement:  'mirror-epel-lastsync'
