@@ -83,25 +83,6 @@
                 </div>
 
                 <div class="grid-cell">
-                  <div class="mirror-wrapper">
-                    <a class="mirror-link-wrapper" href="/ubuntu">
-                      <div class="mirror-logo" style="background-image: url(icons/ubuntu.png)"></div>
-                      <div class="mirror-content">
-                      <h6>Ubuntu</h6>
-                      <p>Mirror for Ubuntu</p>
-                      <p>Size: <span id="mirror-ubuntu-size">unknown</span></p>
-                      <p>Last sync: <span id="mirror-ubuntu-lastsync">unknown</span></p>
-                      </div>
-                    </a>
-                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('ubuntu'); return false;">
-                      <div>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="grid-cell">
                     <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/epel">
                             <div class="mirror-logo" style="background-image: url(icons/epel.png)"></div>
@@ -120,14 +101,86 @@
                     </div>
                 </div>
 
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/ubuntu">
+                      <div class="mirror-logo" style="background-image: url(icons/ubuntu.png)"></div>
+                      <div class="mirror-content">
+                      <h6>Ubuntu</h6>
+                      <p>Mirror for Ubuntu</p>
+                      <p>Size: <span id="mirror-ubuntu-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-ubuntu-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('ubuntu'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
               </div>
 
               <h4>Unofficial mirrors</h4>
               <div class="grid grid--12of12 grid-xs--12of12 grid-md--6of12 grid-lg--6of12">
 
-                <p class="nogrid-p">
-                  Currently, all of our mirrors are official!
-                </p>
+                <div class="grid-cell">
+                    <div class="mirror-wrapper">
+                        <a class="mirror-link-wrapper" href="/debian-security">
+                            <div class="mirror-logo" style="background-image: url(icons/debian.png)"></div>
+                            <div class="mirror-content">
+                                <h6>Debian Security</h6>
+                                <p>Mirror for Debian Security</p>
+                                <p>Size: <span id="mirror-debsec-size">unknown</span></p>
+                                <p>Last sync: <span id="mirror-debsec-lastsync">unknown</span></p>
+                            </div>
+                        </a>
+                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('debsec'); return false;">
+                            <div>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-cell">
+                    <div class="mirror-wrapper">
+                        <a class="mirror-link-wrapper" href="/dotdeb">
+                            <div class="mirror-logo" style="background-image: url(icons/dotdeb.png)"></div>
+                            <div class="mirror-content">
+                                <h6>dotdeb</h6>
+                                <p>Mirror for dotdeb</p>
+                                <p>Size: <span id="mirror-dotdeb-size">unknown</span></p>
+                                <p>Last sync: <span id="mirror-dotdeb-lastsync">unknown</span></p>
+                            </div>
+                        </a>
+                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('dotdeb'); return false;">
+                            <div>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-cell">
+                    <div class="mirror-wrapper">
+                        <a class="mirror-link-wrapper" href="/nodejs">
+                            <div class="mirror-logo" style="background-image: url(icons/nodejs.png)"></div>
+                            <div class="mirror-content">
+                                <h6>NodeJS</h6>
+                                <p>Mirror for NodeJS</p>
+                                <p>Size: <span id="mirror-nodejs-size">unknown</span></p>
+                                <p>Last sync: <span id="mirror-nodejs-lastsync">unknown</span></p>
+                            </div>
+                        </a>
+                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('nodejs'); return false;">
+                            <div>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
               </div>
             </section>
@@ -220,6 +273,33 @@ deb-src http://pkg.adfinis-sygroup.ch/debian/ jessie-updates main contrib non-fr
       </div>
     </div>
 
+    <div class="helpbox" id="helpbox-debsec">
+      <div>
+        <h3>Debian Security help</h3>
+
+        <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
+        <p>Replace "jessie" with your release.</p>
+        <pre><code>
+deb http://pkg.adfinis-sygroup.ch/debian-security jessie/updates main contrib non-free
+deb-src http://pkg.adfinis-sygroup.ch/debian-security jessie/updates main contrib non-free
+        </code></pre><br>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-dotdeb">
+      <div>
+        <h3>dotdeb help</h3>
+
+        <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
+        <p>Replace "jessie" with your release.</p>
+        <pre><code>
+deb http://pkg.adfinis-sygroup.ch/dotdeb jessie all
+        </code></pre><br>
+        <p></p>
+      </div>
+    </div>
+
     <div class="helpbox" id="helpbox-epel">
       <div>
         <h3>EPEL help</h3>
@@ -240,6 +320,22 @@ yum install http://pkg.adfinis-sygroup.ch/epel/epel-release-latest-7.noarch.rpm
               </li>
             </ul>
           </p>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-nodejs">
+      <div>
+        <h3>nodejs help</h3>
+        <p>NodeJS 7.x is mirrored for the following Distributions:<br>
+        Ubuntu: sid, trusty, xenial, yakkety and zesty<br>
+        Debian: jessie</p>
+
+        <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
+        <p>Replace "jessie" with your corresponding release.</p>
+        <pre><code>
+deb http://pkg.adfinis-sygroup.ch/nodejs/node_7.x jessie main
+        </code></pre><br>
+        <p></p>
       </div>
     </div>
 

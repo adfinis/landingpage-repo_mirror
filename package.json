@@ -14,6 +14,7 @@
   "license": "",
   "devDependencies": {
     "broccoli": "^0.16.8",
+    "broccoli-cli": "^1.0.0",
     "broccoli-concat": "0.0.13",
     "broccoli-cssnano": "^2.0.1",
     "broccoli-env": "0.0.1",

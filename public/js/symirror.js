@@ -61,9 +61,24 @@ var MIRRORS = [
         timestampElement:  'mirror-debian-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/debian_security.json',
+        sizeElement:       'mirror-debsec-size',
+        timestampElement:  'mirror-debsec-lastsync'
+    },
+    {
+        statisticsUrl:     '/mirror/dotdeb.json',
+        sizeElement:       'mirror-dotdeb-size',
+        timestampElement:  'mirror-dotdeb-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/epel.json',
         sizeElement:       'mirror-epel-size',
         timestampElement:  'mirror-epel-lastsync'
+    },
+    {
+        statisticsUrl:     '/mirror/nodejs.json',
+        sizeElement:       'mirror-nodejs-size',
+        timestampElement:  'mirror-nodejs-lastsync'
     },
     {
         statisticsUrl:     '/mirror/ubuntu.json',
