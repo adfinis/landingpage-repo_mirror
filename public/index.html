@@ -103,6 +103,25 @@
 
                 <div class="grid-cell">
                   <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/opensuse">
+                      <div class="mirror-logo" style="background-image: url(icons/opensuse.png)"></div>
+                      <div class="mirror-content">
+                      <h6>openSUSE</h6>
+                      <p>Mirror for openSUSE</p>
+                      <p>Size: <span id="mirror-opensuse-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-opensuse-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('opensuse'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
                     <a class="mirror-link-wrapper" href="/ubuntu">
                       <div class="mirror-logo" style="background-image: url(icons/ubuntu.png)"></div>
                       <div class="mirror-content">
@@ -336,6 +355,23 @@ yum install http://pkg.adfinis-sygroup.ch/epel/epel-release-latest-7.noarch.rpm
 deb http://pkg.adfinis-sygroup.ch/nodejs/node_7.x jessie main
         </code></pre><br>
         <p></p>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-opensuse">
+      <div>
+        <h3>openSUSE help</h3>
+
+        <p>Since we are officially listed, our mirror will be automatically selected if it fits best to your location.</p>
+
+          <h3>Additional information</h3>
+          <p>You can find further information about our mirror on the following site:
+            <ul>
+              <li>
+                <a href="http://mirrors.opensuse.org/">http://mirrors.opensuse.org/</a>
+              </li>
+            </ul>
+          </p>
       </div>
     </div>
 
