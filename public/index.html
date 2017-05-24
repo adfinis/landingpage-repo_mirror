@@ -84,6 +84,25 @@
 
                 <div class="grid-cell">
                     <div class="mirror-wrapper">
+                        <a class="mirror-link-wrapper" href="/dotdeb">
+                            <div class="mirror-logo" style="background-image: url(icons/dotdeb.png)"></div>
+                            <div class="mirror-content">
+                                <h6>dotdeb</h6>
+                                <p>Mirror for dotdeb</p>
+                                <p>Size: <span id="mirror-dotdeb-size">unknown</span></p>
+                                <p>Last sync: <span id="mirror-dotdeb-lastsync">unknown</span></p>
+                            </div>
+                        </a>
+                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('dotdeb'); return false;">
+                            <div>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid-cell">
+                    <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/epel">
                             <div class="mirror-logo" style="background-image: url(icons/epel.png)"></div>
                             <div class="mirror-content">
@@ -156,25 +175,6 @@
                             </div>
                         </a>
                         <a class="mirror-help-wrapper" href="#" onclick="showHelp('debsec'); return false;">
-                            <div>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="grid-cell">
-                    <div class="mirror-wrapper">
-                        <a class="mirror-link-wrapper" href="/dotdeb">
-                            <div class="mirror-logo" style="background-image: url(icons/dotdeb.png)"></div>
-                            <div class="mirror-content">
-                                <h6>dotdeb</h6>
-                                <p>Mirror for dotdeb</p>
-                                <p>Size: <span id="mirror-dotdeb-size">unknown</span></p>
-                                <p>Last sync: <span id="mirror-dotdeb-lastsync">unknown</span></p>
-                            </div>
-                        </a>
-                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('dotdeb'); return false;">
                             <div>
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
                             </div>
@@ -310,7 +310,7 @@ deb-src http://pkg.adfinis-sygroup.ch/debian-security jessie/updates main contri
       <div>
         <h3>dotdeb help</h3>
 
-        <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
+        <p>Add the following line to your <b>/etc/apt/sources.list</b>: <p>
         <p>Replace "jessie" with your release.</p>
         <pre><code>
 deb http://pkg.adfinis-sygroup.ch/dotdeb jessie all
