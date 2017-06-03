@@ -81,6 +81,11 @@ var MIRRORS = [
         timestampElement:  'mirror-nodejs-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/opensuse.json',
+        sizeElement:       'mirror-opensuse-size',
+        timestampElement:  'mirror-opensuse-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/ubuntu.json',
         sizeElement:       'mirror-ubuntu-size',
         timestampElement:  'mirror-ubuntu-lastsync'
