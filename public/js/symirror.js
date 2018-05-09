@@ -46,6 +46,11 @@ Mirror.prototype.render = function() {
 
 var MIRRORS = [
     {
+        statisticsUrl:     '/mirror/alpine.json',
+        sizeElement:       'mirror-alpine-size',
+        timestampElement:  'mirror-alpine-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/archlinux.json',
         sizeElement:       'mirror-archlinux-size',
         timestampElement:  'mirror-archlinux-lastsync'
