@@ -158,30 +158,29 @@
                   </div>
                 </div>
 
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                      <a class="mirror-link-wrapper" href="/alpine">
+                          <div class="mirror-logo" style="background-image: url(icons/alpine.png)"></div>
+                          <div class="mirror-content">
+                              <h6>Alpine</h6>
+                              <p>Mirror for Alpine</p>
+                              <p>Size: <span id="mirror-alpine-size">unknown</span></p>
+                              <p>Last sync: <span id="mirror-alpine-lastsync">unknown</span></p>
+                          </div>
+                      </a>
+                      <a class="mirror-help-wrapper" href="#" onclick="showHelp('alpine'); return false;">
+                          <div>
+                              <i class="fa fa-info-circle" aria-hidden="true"></i>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+
               </div>
 
               <h4>Unofficial mirrors</h4>
               <div class="grid grid--12of12 grid-xs--12of12 grid-md--6of12 grid-lg--6of12">
-
-                <div class="grid-cell">
-                    <div class="mirror-wrapper">
-                        <a class="mirror-link-wrapper" href="/alpine">
-                            <div class="mirror-logo" style="background-image: url(icons/alpine.png)"></div>
-                            <div class="mirror-content">
-                                <h6>Alpine</h6>
-                                <p>Mirror for Alpine</p>
-                                <p>Size: <span id="mirror-alpine-size">unknown</span></p>
-                                <p>Last sync: <span id="mirror-alpine-lastsync">unknown</span></p>
-                            </div>
-                        </a>
-                        <a class="mirror-help-wrapper" href="#" onclick="showHelp('alpine'); return false;">
-                            <div>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
                 <div class="grid-cell">
                     <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/debian-security">
@@ -244,7 +243,7 @@
       <div>
         <h3>Alpine help</h3>
 
-        <p>In other cases, you may add these lines to your <b>/etc/apk/repositories</b>:</p>
+        <p>Add the following lines to your <b>/etc/apk/repositories</b>:</p>
         <p>Replace "v3.7" with your release.</p>
         <pre><code>
 http://pkg.adfinis-sygroup.ch/alpine/v3.7/main
@@ -255,7 +254,7 @@ https://pkg.adfinis-sygroup.ch/alpine/v3.7/main
           <p>You can find further information about our mirror on the following site:
             <ul>
               <li>
-                <a href="https://wiki.alpinelinux.org/wiki/Alpine_Linux:Mirrors">https://wiki.alpinelinux.org/wiki/Alpine_Linux:Mirrors</a>
+                <a href="https://mirrors.alpinelinux.org/">https://mirrors.alpinelinux.org/</a>
               </li>
             </ul>
           </p>
