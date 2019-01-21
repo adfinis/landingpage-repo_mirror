@@ -1,4 +1,4 @@
-# repository mirror landingpage
+# REPOSITORY MIRROR LANDINGPAGE
 
 [![Build Status](https://img.shields.io/travis/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://travis-ci.org/adfinis-sygroup/landingpage-repo_mirror)
 [![License](https://img.shields.io/github/license/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/master/LICENSE)
@@ -42,7 +42,7 @@ make deploy
 
 # License
 
-`GPL-3.0 <https://github.com/adfinis-sygroup/ansible-role-icinga2_master/blob/master/LICENSE>`_
+`GPL-3.0 <https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/master/LICENSE>`_
 
 
 # Author Information
