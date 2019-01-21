@@ -4,7 +4,7 @@ var concat = require('broccoli-concat')
 var mergeTrees = require('broccoli-merge-trees')
 var cssnano = require('broccoli-cssnano')
 var funnel = require('broccoli-funnel')
-var uglifyJavaScript = require('broccoli-uglify-js')
+var uglifyJavaScript = require('broccoli-uglify-sourcemap')
 
 var trees = []
 
