@@ -39,11 +39,13 @@ make prod
 make deploy
 ```
 
+# Contribution
+
+Contributions are more than welcome! Please feel free to open new issues or pull requests.
 
 # License
 
-`GPL-3.0 <https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/master/LICENSE>`_
-
+[GPL-3.0](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/master/LICENSE)
 
 # Author Information
 
