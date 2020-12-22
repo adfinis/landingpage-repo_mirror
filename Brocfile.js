@@ -1,29 +1,28 @@
 /* Brocfile.js */
 
-var concat = require('broccoli-concat')
-var mergeTrees = require('broccoli-merge-trees')
-var cssnano = require('broccoli-cssnano')
-var funnel = require('broccoli-funnel')
-var uglifyJavaScript = require('broccoli-uglify-sourcemap')
-
-var trees = []
+const concat = require('broccoli-concat')
+const MergeTrees = require('broccoli-merge-trees')
+const Funnel = require('broccoli-funnel')
+const UglifyJavaScript = require('broccoli-uglify-sourcemap')
+const BroccoliCleanCss = require('broccoli-clean-css');
 
 
-var scripts = concat('public', {
+const trees = []
+
+
+const scripts = new UglifyJavaScript(concat('public', {
     inputFiles: ['**/*.js'],
     outputFile: '/assets/scripts.min.js'
-})
-scripts = uglifyJavaScript(scripts)
+}))
 trees.push(scripts)
 
-var styles = concat('public', {
+const styles = new BroccoliCleanCss(concat('public', {
     inputFiles: ['**/*.css'],
     outputFile: '/assets/styles.min.css'
-})
-styles = cssnano(styles)
+}))
 trees.push(styles)
 
-var public = funnel('public', {
+const public = new Funnel('public', {
     destDir: '.',
     include: ['index.html', 'fonts/*', 'icons/*']
 })
@@ -31,7 +30,7 @@ trees.push(public)
 
 
 if (require('broccoli-env').getEnv() == 'development') {
-    var fixtures = funnel('fixtures', {
+    const fixtures = new Funnel('fixtures', {
         destDir: './mirror/',
         include: ['*.json']
     })
@@ -39,6 +38,6 @@ if (require('broccoli-env').getEnv() == 'development') {
 }
 
 
-module.exports = mergeTrees(trees)
+module.exports = new MergeTrees(trees)
 
 // vim: set sw=4 ts=4 si nocindent et: .. }}}
