@@ -5,7 +5,7 @@
 
 
 This repo contains our mirror landing page.
-https://pkg.adfinis-sygroup.ch
+https://pkg.adfinis.com
 
 The page is compiled and minified using nodejs broccoli and then uploaded to our mirror.
 
@@ -51,5 +51,5 @@ Contributions are more than welcome! Please feel free to open new issues or pull
 
 landingpage-repo_mirror was written by:
 
-* [Adfinis SyGroup AG](https://www.adfinis-sygroup.ch/) | [Twitter](https://twitter.com/adfinissygroup) | [GitHub](https://github.com/adfinis-sygroup)
+* [Adfinis AG](https://adfinis.com/) | [Twitter](https://twitter.com/adfinis) | [GitHub](https://github.com/adfinis-sygroup)
 

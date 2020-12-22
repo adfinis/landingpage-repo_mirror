@@ -9,4 +9,4 @@ clean:
 
 
 deploy: prod
-	rsync -avz dist/ pkg.adfinis-sygroup.ch:/var/www/
+	rsync -avz dist/ pkg.adfinis.com:/var/www/
