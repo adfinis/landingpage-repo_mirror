@@ -13,13 +13,13 @@
   "author": "",
   "license": "",
   "devDependencies": {
-    "broccoli": "^2.0.1",
+    "broccoli": "^3.5.0",
     "broccoli-cli": "^1.0.0",
-    "broccoli-concat": "^3.7.3",
-    "broccoli-cssnano": "^2.0.1",
+    "broccoli-concat": "^4.2.4",
+    "broccoli-clean-css": "^2.0.0",
     "broccoli-env": "0.0.1",
-    "broccoli-funnel": "^2.0.1",
-    "broccoli-merge-trees": "^0.2.3",
-    "broccoli-uglify-sourcemap": "^2.2.0"
+    "broccoli-funnel": "^3.0.3",
+    "broccoli-merge-trees": "^4.2.0",
+    "broccoli-uglify-sourcemap": "^4.0.0"
   }
 }
