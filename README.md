@@ -11,15 +11,27 @@ The page is compiled and minified using nodejs broccoli and then uploaded to our
 
 ## Requirements
 
-NodeJS and npm must be installed on your system.
+NodeJS and yarn must be installed on your system.
 
-broccoli and its dependencies are installed using npm:
+broccoli and its dependencies are installed using yarn:
 
 ```bash
-npm install
+yarnpkg
 ```
 
 ## Build the Landingpage
+
+### Docker
+
+You can build the project using docker.
+Make sure to mount the repository root in the docker container at `/app`!
+
+```bash
+docker build -t landingpage-repo_mirror docker/
+docker run -it --rm -v $PWD:/app landingpage-repo_mirror
+```
+
+The "compiled" project will be at `dist`.
 
 ### Build the site and serve it with a built-in server for developing purposes:
 
@@ -31,12 +43,6 @@ make dev
 
 ```bash
 make prod
-```
-
-### Build and deploy
-
-```bash
-make deploy
 ```
 
 # Contribution
