@@ -56,6 +56,11 @@ var MIRRORS = [
         timestampElement:  'mirror-archlinux-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/archlinux-pkgbld.json',
+        sizeElement:       'mirror-archlinux-pkgbld-size',
+        timestampElement:  'mirror-archlinux-pkgbld-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/centos.json',
         sizeElement:       'mirror-centos-size',
         timestampElement:  'mirror-centos-lastsync'
@@ -66,7 +71,7 @@ var MIRRORS = [
         timestampElement:  'mirror-debian-lastsync'
     },
     {
-        statisticsUrl:     '/mirror/debian_security.json',
+        statisticsUrl:     '/mirror/debian-security.json',
         sizeElement:       'mirror-debsec-size',
         timestampElement:  'mirror-debsec-lastsync'
     },
@@ -79,6 +84,11 @@ var MIRRORS = [
         statisticsUrl:     '/mirror/epel.json',
         sizeElement:       'mirror-epel-size',
         timestampElement:  'mirror-epel-lastsync'
+    },
+    {
+        statisticsUrl:     '/mirror/manjaro.json',
+        sizeElement:       'mirror-manjaro-size',
+        timestampElement:  'mirror-manjaro-lastsync'
     },
     {
         statisticsUrl:     '/mirror/nodejs.json',
