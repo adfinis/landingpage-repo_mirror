@@ -6,7 +6,3 @@ dev:
 
 clean:
 	rm -rf dist tmp
-
-
-deploy: prod
-	rsync -avz dist/ pkg.adfinis.com:/var/www/

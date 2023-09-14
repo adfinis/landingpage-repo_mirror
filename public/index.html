@@ -84,6 +84,27 @@
 
                 <div class="grid-cell">
                   <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/centos-stream">
+                      <div class="mirror-logo" style="background-image: url(icons/centos.png)"></div>
+                      <div class="mirror-content">
+                      <h6>CentOS Stream</h6>
+                      <p>Mirror for CentOS Stream</p>
+                      <p>Size: <span id="mirror-centos-stream-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-centos-stream-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <!--
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('centos-stream'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                    -->
+                  </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
                     <a class="mirror-link-wrapper" href="/debian">
                       <div class="mirror-logo" style="background-image: url(icons/debian.png)"></div>
                       <div class="mirror-content">
@@ -101,7 +122,7 @@
                   </div>
                 </div>
 
-                <div class="grid-cell">
+<!--                <div class="grid-cell">
                     <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/dotdeb">
                             <div class="mirror-logo" style="background-image: url(icons/dotdeb.png)"></div>
@@ -118,7 +139,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="grid-cell">
                     <div class="mirror-wrapper">
@@ -182,6 +203,25 @@
               <h4>Unofficial mirrors</h4>
               <div class="grid grid--12of12 grid-xs--12of12 grid-md--6of12 grid-lg--6of12">
                 <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/archlinux-pkgbuild">
+                      <div class="mirror-logo" style="background-image: url(icons/archlinux-pkgbld.png)"></div>
+                      <div class="mirror-content">
+                        <h6>Arch Linux Debug Repos</h6>
+                        <p>Mirror for Arch Linux Debug Repos</p>
+                        <p>Size: <span id="mirror-archlinux-pkgbld-size">unknown</span></p>
+                        <p>Last sync: <span id="mirror-archlinux-pkgbld-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('archlinux-pkgbuild'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid-cell">
                     <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/debian-security">
                             <div class="mirror-logo" style="background-image: url(icons/debian.png)"></div>
@@ -198,6 +238,25 @@
                             </div>
                         </a>
                     </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/manjaro">
+                      <div class="mirror-logo" style="background-image: url(icons/manjaro.svg)"></div>
+                      <div class="mirror-content">
+                        <h6>Manjaro</h6>
+                        <p>Mirror for Manjaro</p>
+                        <p>Size: <span id="mirror-manjaro-size">unknown</span></p>
+                        <p>Last sync: <span id="mirror-manjaro-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('manjaro'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
                 </div>
 
                 <div class="grid-cell">
@@ -276,6 +335,21 @@ Server = http://pkg.adfinis.com/archlinux/$repo/os/$arch
       </div>
     </div>
 
+    <div class="helpbox" id="helpbox-archlinux-pkgbuild">
+      <div>
+        <h3>Arch Linux Debug Repos help</h3>
+
+        <p>This repository has been provided to those interested in accessing debug packages.</p>
+        <p>Besides debug packages, it includes everything including very old versions.</p>
+        <p>Add/replace the following lines to your <b>/etc/pacman.d/mirrorlist</b>: <p>
+        <pre><code>
+Server = https://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
+Server = http://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
+        </code></pre><br>
+        <p></p>
+      </div>
+    </div>
+
     <div class="helpbox" id="helpbox-centos">
       <div>
         <h3>CentOS help</h3>
@@ -297,21 +371,41 @@ baseurl=http://pkg.adfinis.com/centos/$releasever/os/$basearch
       </div>
     </div>
 
+    <div class="helpbox" id="helpbox-centos-stream">
+      <div>
+        <h3>CentOS Stream help</h3>
+        <p>Since we are officially listed, you don't need to configure anything special. Dnf gets a computed list from <a href="http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os">http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os</a>.</p>
+        <p>If you wish, you can change the baseurl in <b>/etc/yum.repos.d/CentOS-Base.repo</b>:</p>
+        <pre><code>
+baseurl=http://pkg.adfinis.com/centos-stream/$releasever/os/$basearch
+        </code></pre><br>
+
+          <h3>Additional information</h3>
+          <p>You can find further information about our mirror on the following site:
+            <ul>
+              <li>
+                <a href="http://mirror-status.centos.org/#ch">http://mirror-status.centos.org/#ch</a>
+              </li>
+            </ul>
+          </p>
+      </div>
+    </div>
+
     <div class="helpbox" id="helpbox-debian">
       <div>
         <h3>Debian help</h3>
 
         <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
-        <p>Replace "bullseye" with your release.</p>
+        <p>Replace "bookworm" with your release.</p>
         <pre><code>
-deb https://pkg.adfinis.com/debian/ bullseye main non-free contrib
-deb-src https://pkg.adfinis.com/debian/ bullseye main non-free contrib
+deb http://pkg.adfinis.com/debian/ bookworm main non-free contrib
+deb-src http://pkg.adfinis.com/debian/ bookworm main non-free contrib
 
-deb https://security.debian.org/debian-security bullseye-security main contrib non-free
-deb-src https://security.debian.org/debian-security bullseye-security main contrib non-free
+deb http://security.debian.org/ bookworm-security main
+deb-src http://security.debian.org/ bookworm-security main
 
-deb https://pkg.adfinis.com/debian/ bullseye-updates main non-free contrib
-deb-src https://pkg.adfinis.com/debian/ bullseye-updates main non-free contrib
+deb http://pkg.adfinis.com/debian/ bookworm-updates main contrib non-free
+deb-src http://pkg.adfinis.com/debian/ bookworm-updates main contrib non-free
         </code></pre><br>
 
           <h3>Additional information</h3>
@@ -330,12 +424,25 @@ deb-src https://pkg.adfinis.com/debian/ bullseye-updates main non-free contrib
         <h3>Debian Security help</h3>
 
         <p>Add the following lines to your <b>/etc/apt/sources.list</b>: <p>
-        <p>Replace "bullseye" with your release.</p>
+        <p>Replace "bookworm" with your release.</p>
         <pre><code>
-deb https://pkg.adfinis.com/debian-security bullseye-security main contrib non-free
-deb-src https://pkg.adfinis.com/debian-security bullseye-security main contrib non-free
+deb http://pkg.adfinis.com/debian-security bookworm-security main contrib non-free
+deb-src http://pkg.adfinis.com/debian-security bookworm-security main contrib non-free
         </code></pre><br>
         <p></p>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-manjaro">
+      <div>
+        <h3>Manjaro help</h3>
+
+        <p>Add the following lines to your <b>/etc/pacman.d/mirrorlist</b>:</p>
+        <p>Replace "&lt;branch&gt;" with your desired branch (for example stable for x86_64 or arm-stable for arm)</p>
+        <pre><code>
+Server = https://pkg.adfinis.com/manjaro/&lt;branch&gt;/$repo/$arch
+Server = http://pkg.adfinis.com/manjaro/&lt;branch&gt;/$repo/$arch
+        </code></pre><br>
       </div>
     </div>
 
@@ -344,9 +451,9 @@ deb-src https://pkg.adfinis.com/debian-security bullseye-security main contrib n
         <h3>dotdeb help</h3>
 
         <p>Add the following line to your <b>/etc/apt/sources.list</b>: <p>
-        <p>Replace "jessie" with your release.</p>
+        <p>Replace "bookworm" with your release.</p>
         <pre><code>
-deb http://pkg.adfinis.com/dotdeb jessie all
+deb http://pkg.adfinis.com/dotdeb bookworm all
         </code></pre><br>
         <p></p>
       </div>
