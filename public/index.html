@@ -204,6 +204,25 @@
               <div class="grid grid--12of12 grid-xs--12of12 grid-md--6of12 grid-lg--6of12">
                 <div class="grid-cell">
                   <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/almalinux">
+                      <div class="mirror-logo" style="background-image: url(icons/almalinux.png)"></div>
+                      <div class="mirror-content">
+                      <h6>AlmaLinux</h6>
+                      <p>Mirror for AlmaLinux</p>
+                      <p>Size: <span id="mirror-almalinux-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-almalinux-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('almalinux'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
                     <a class="mirror-link-wrapper" href="/archlinux-pkgbuild">
                       <div class="mirror-logo" style="background-image: url(icons/archlinux-pkgbld.png)"></div>
                       <div class="mirror-content">
@@ -238,6 +257,25 @@
                             </div>
                         </a>
                     </div>
+                </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/fedora">
+                      <div class="mirror-logo" style="background-image: url(icons/fedora.png)"></div>
+                      <div class="mirror-content">
+                      <h6>Fedora</h6>
+                      <p>Mirror for Fedora</p>
+                      <p>Size: <span id="mirror-fedora-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-fedora-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('fedora'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
                 </div>
 
                 <div class="grid-cell">
@@ -277,6 +315,26 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/rockylinux">
+                      <div class="mirror-logo" style="background-image: url(icons/rockylinux.png)"></div>
+                      <div class="mirror-content">
+                      <h6>Rocky Linux</h6>
+                      <p>Mirror for Rocky Linux</p>
+                      <p>Size: <span id="mirror-rockylinux-size">unknown</span></p>
+                      <p>Last sync: <span id="mirror-rockylinux-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('rockylinux'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
 
               </div>
             </section>
@@ -349,6 +407,22 @@ Server = http://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
         <p></p>
       </div>
     </div>
+
+    <div class="helpbox" id="helpbox-almalinux">
+      <div>
+        <h3>AlmaLinux help</h3>
+        <p>Edit <b>/etc/yum.repos.d/adfinis.repo</b> and add:</p>
+        <pre><code>
+[almalinux]
+name=AlmaLinux $releasever - $basearch
+baseurl=http://pkg.adfinis.com/almalinux/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+        </code></pre>
+        <!-- Add additional AlmaLinux-specific help content here -->
+      </div>
+    </div>
+
 
     <div class="helpbox" id="helpbox-centos">
       <div>
@@ -433,6 +507,21 @@ deb-src http://pkg.adfinis.com/debian-security bookworm-security main contrib no
       </div>
     </div>
 
+    <div class="helpbox" id="helpbox-fedora">
+      <div>
+        <h3>Fedora help</h3>
+        <p>Edit <b>/etc/yum.repos.d/adfinis.repo</b> and add:</p>
+        <pre><code>
+[fedora]
+name=Fedora $releasever - $basearch
+baseurl=http://pkg.adfinis.com/fedora/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+        </code></pre>
+        <br>
+      </div>
+    </div>
+
     <div class="helpbox" id="helpbox-manjaro">
       <div>
         <h3>Manjaro help</h3>
@@ -458,6 +547,22 @@ deb http://pkg.adfinis.com/dotdeb bookworm all
         <p></p>
       </div>
     </div>
+
+    <div class="helpbox" id="helpbox-rockylinux">
+      <div>
+        <h3>RockyLinux help</h3>
+        <p>Edit <b>/etc/yum.repos.d/adfinis.repo</b> and add:</p>
+        <pre><code>
+[rockylinux]
+name=RockyLinux $releasever - $basearch
+baseurl=http://pkg.adfinis.com/rockylinux/$releasever/$basearch/
+enabled=1
+gpgcheck=1
+        </code></pre><br>
+        <!-- Add additional RockyLinux-specific help content here -->
+      </div>
+    </div>
+
 
     <div class="helpbox" id="helpbox-epel">
       <div>

@@ -51,6 +51,11 @@ var MIRRORS = [
         timestampElement:  'mirror-alpine-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/almalinux.json',
+        sizeElement:       'mirror-almalinux-size',
+        timestampElement:  'mirror-almalinux-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/archlinux.json',
         sizeElement:       'mirror-archlinux-size',
         timestampElement:  'mirror-archlinux-lastsync'
@@ -64,6 +69,11 @@ var MIRRORS = [
         statisticsUrl:     '/mirror/centos.json',
         sizeElement:       'mirror-centos-size',
         timestampElement:  'mirror-centos-lastsync'
+    },
+    {
+        statisticsUrl:     '/mirror/centos-stream.json',
+        sizeElement:       'mirror-centos-stream-size',
+        timestampElement:  'mirror-centos-stream-lastsync'
     },
     {
         statisticsUrl:     '/mirror/debian.json',
@@ -86,6 +96,11 @@ var MIRRORS = [
         timestampElement:  'mirror-epel-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/fedora.json',
+        sizeElement:       'mirror-fedora-size',
+        timestampElement:  'mirror-fedora-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/manjaro.json',
         sizeElement:       'mirror-manjaro-size',
         timestampElement:  'mirror-manjaro-lastsync'
@@ -99,6 +114,11 @@ var MIRRORS = [
         statisticsUrl:     '/mirror/opensuse.json',
         sizeElement:       'mirror-opensuse-size',
         timestampElement:  'mirror-opensuse-lastsync'
+    },
+    {
+        statisticsUrl:     '/mirror/rockylinux.json',
+        sizeElement:       'mirror-rockylinux-size',
+        timestampElement:  'mirror-rockylinux-lastsync'
     },
     {
         statisticsUrl:     '/mirror/ubuntu.json',
