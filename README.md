@@ -7,37 +7,33 @@
 This repo contains our mirror landing page.
 https://pkg.adfinis.com
 
-The page is compiled and minified using nodejs broccoli and then uploaded to our mirror.
+The page is built with vite and then uploaded to our mirror.
 
 ## Requirements
 
 NodeJS and yarn must be installed on your system.
 
-broccoli and its dependencies are installed using yarn:
+The dependencies of the project have to be installed using yarn:
 
 ```bash
-yarnpkg
+yarn
 ```
 
 ## Build the Landingpage
 
-### Docker
-
-You can build the project using docker.
-Make sure to mount the repository root in the docker container at `/app`!
-
-```bash
-docker build -t landingpage-repo_mirror docker/
-docker run -it --rm -v $PWD:/app landingpage-repo_mirror
-```
-
-The "compiled" project will be at `dist`.
-
-### Build the site and serve it with a built-in server for developing purposes:
+### Vite dev server
 
 ```bash
 make dev
 ```
+This dev server has hot reloading and many other nice fetures
+This also starts a flask server to deal with cors which is automatically used by the solid.js application 
+
+Requirements:
+- yarn
+- flask
+- flask-cors
+- httpx
 
 ### Build the site for production
 
