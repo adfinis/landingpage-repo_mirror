@@ -96,6 +96,11 @@ var MIRRORS = [
         timestampElement:  'mirror-epel-lastsync'
     },
     {
+        statisticsUrl:     '/mirror/gentoo.json',
+        sizeElement:       'mirror-gentoo-size',
+        timestampElement:  'mirror-gentoo-lastsync'
+    },
+    {
         statisticsUrl:     '/mirror/fedora.json',
         sizeElement:       'mirror-fedora-size',
         timestampElement:  'mirror-fedora-lastsync'

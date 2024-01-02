@@ -298,6 +298,25 @@
                 </div>
 
                 <div class="grid-cell">
+                  <div class="mirror-wrapper">
+                    <a class="mirror-link-wrapper" href="/gentoo">
+                      <div class="mirror-logo" style="background-image: url(icons/gentoo.svg)"></div>
+                      <div class="mirror-content">
+                        <h6>Gentoo</h6>
+                        <p>Mirror for Gentoo</p>
+                        <p>Size: <span id="mirror-gentoo-size">unknown</span></p>
+                        <p>Last sync: <span id="mirror-gentoo-lastsync">unknown</span></p>
+                      </div>
+                    </a>
+                    <a class="mirror-help-wrapper" href="#" onclick="showHelp('gentoo'); return false;">
+                      <div>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="grid-cell">
                     <div class="mirror-wrapper">
                         <a class="mirror-link-wrapper" href="/nodejs">
                             <div class="mirror-logo" style="background-image: url(icons/nodejs.png)"></div>
@@ -531,6 +550,17 @@ gpgcheck=1
         <pre><code>
 Server = https://pkg.adfinis.com/manjaro/&lt;branch&gt;/$repo/$arch
 Server = http://pkg.adfinis.com/manjaro/&lt;branch&gt;/$repo/$arch
+        </code></pre><br>
+      </div>
+    </div>
+
+    <div class="helpbox" id="helpbox-gentoo">
+      <div>
+        <h3>Gentoo help</h3>
+
+        <p>To configure your Gentoo system to use the Adfinis HTTP mirror for packages, modify your <b>/etc/portage/make.conf</b> file. Set the GENTOO_MIRRORS variable to use the Adfinis HTTP mirror:</p>
+        <pre><code>
+GENTOO_MIRRORS="http://pkg.adfinis.com/gentoo"
         </code></pre><br>
       </div>
     </div>
