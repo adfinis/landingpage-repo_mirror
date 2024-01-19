@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+
+  h5 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply text-adfinis-blue hover:text-adfinis-darkblue;
+  }
+
+  pre {
+    @apply bg-gray-200 px-2 md:px-4 py-1 md:py-3 rounded leading-3 whitespace-pre-wrap my-5;
+  }
+
+  code {
+    @apply max-sm:text-[clamp(0.5rem,2vw,0.65rem)] sm:text-xs;
+  }
+}

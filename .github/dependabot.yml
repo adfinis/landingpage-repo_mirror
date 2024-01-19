@@ -1,0 +1,66 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "12:00"
+      timezone: "Europe/Zurich"
+
+    commit-message:
+      prefix: chore
+      include: scope
+
+    groups:
+      actions:
+        patterns:
+          - "*"
+
+  - package-ecosystem: npm
+    directory: "/solid"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "12:00"
+      timezone: "Europe/Zurich"
+    versioning-strategy: increase
+    open-pull-requests-limit: 4
+    commit-message:
+      prefix: chore
+      include: scope
+
+    groups:
+      linting:
+        patterns:
+          - "eslint"
+          - "eslint-*"
+          - "stylelint"
+          - "stylelint-*"
+          - "prettier"
+          - "prettier-*"
+
+      solid:
+        patterns:
+          - "solid-*"
+          - "@solid-*"
+
+      vite:
+        patterns:
+          - "vite"
+          - "vite-*"
+
+      js:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "eslint"
+          - "eslint-*"
+          - "stylelint"
+          - "stylelint-*"
+          - "prettier"
+          - "prettier-*"
+          - "solid-*"
+          - "@solid-*"
+          - "vite"
+          - "vite-*"
