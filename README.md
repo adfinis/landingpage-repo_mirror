@@ -1,7 +1,7 @@
 # REPOSITORY MIRROR LANDINGPAGE
 
 [![Build Status](https://img.shields.io/travis/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://travis-ci.org/adfinis-sygroup/landingpage-repo_mirror)
-[![License](https://img.shields.io/github/license/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/main/LICENSE)
 
 
 This repo contains our mirror landing page.
@@ -47,7 +47,7 @@ Contributions are more than welcome! Please feel free to open new issues or pull
 
 # License
 
-[GPL-3.0](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/master/LICENSE)
+[GPL-3.0](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/main/LICENSE)
 
 # Author Information
 
