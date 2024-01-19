@@ -6,4 +6,4 @@ function tear_down() {
 
 trap tear_down EXIT
 
-./cors-proxy.py & cd solid && yarn run dev
+./cors-proxy.py & cd solid && yarn && yarn run dev

@@ -7,7 +7,7 @@ help:
 
 .PHONY: prod
 prod: ## prod build
-	@cd solid && node_modules/vite/bin/vite.js build && cp ./dist .. -r
+	@cd solid && ../node_modules/vite/bin/vite.js build && cp ./dist .. -r
 
 .PHONY: dev
 dev: ## run dev server
