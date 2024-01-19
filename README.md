@@ -1,6 +1,6 @@
 # REPOSITORY MIRROR LANDINGPAGE
 
-[![Build Status](https://img.shields.io/travis/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://travis-ci.org/adfinis-sygroup/landingpage-repo_mirror)
+[![Lint](https://github.com/adfinis/landingpage-repo_mirror/actions/workflows/lint.yml/badge.svg)](https://github.com/adfinis/landingpage-repo_mirror/actions/workflows/lint.yml)
 [![License](https://img.shields.io/github/license/adfinis-sygroup/landingpage-repo_mirror.svg?style=flat-square)](https://github.com/adfinis-sygroup/landingpage-repo_mirror/blob/main/LICENSE)
 
 
