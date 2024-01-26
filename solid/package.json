@@ -22,7 +22,7 @@
     "solid-markdown": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.22.10",
+    "@babel/eslint-parser": "^7.23.9",
     "autoprefixer": "^10.4.15",
     "concurrently": "^8.2.1",
     "eslint": "^8.51.0",
