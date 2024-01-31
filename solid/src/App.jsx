@@ -36,7 +36,7 @@ function App() {
                     </For>
                 </RepoContainer>
             </Show>
-            <span class="sticky top-[100%] text-gray-700">
+            <span class="sticky top-[100%] text-gray-700 text-center">
                 The hardware and bandwidth for this mirror is donated by{' '}
                 <img class="h-[1em] inline" src="/adfinis.png" /> to the
                 open-source and free software community.
