@@ -2984,10 +2984,10 @@ solid-heroicons@^3.2.4:
   dependencies:
     solid-js "^1.7.6"
 
-solid-js@^1.7.6, solid-js@^1.8.7:
-  version "1.8.11"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.11.tgz#0e7496a9834720b10fe739eaac250221d3f72cd5"
-  integrity sha512-WdwmER+TwBJiN4rVQTVBxocg+9pKlOs41KzPYntrC86xO5sek8TzBYozPEZPL1IRWDouf2lMrvSbIs3CanlPvQ==
+solid-js@^1.7.6, solid-js@^1.8.15:
+  version "1.8.15"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.15.tgz#af4eef7203203efefb605613f3c244b5bcdb63bc"
+  integrity sha512-d0QP/efr3UVcwGgWVPveQQ0IHOH6iU7yUhc2piy8arNG8wxKmvUy1kFxyF8owpmfCWGB87usDKMaVnsNYZm+Vw==
   dependencies:
     csstype "^3.1.0"
     seroval "^1.0.3"
