@@ -21,7 +21,9 @@ function App() {
     const [repos] = createResource(fetchRepos);
     return (
         <>
-            <h1 class="text-adfinis-blue my-5">Welcome to pkg.adfinis.com</h1>
+            <h1 class="text-adfinis-blue my-5">
+                Welcome to pkg.adfinis-on-exoscale.ch
+            </h1>
             <Show fallback={<p>...loading</p>} when={repos()}>
                 <Show when={repos().filter((r) => r.official).length}>
                     <h2 class="text-black mb-2">Official Mirrors</h2>
@@ -41,9 +43,12 @@ function App() {
                 </Show>
             </Show>
             <span class="sticky top-[100%] text-gray-700 text-center">
-                The hardware and bandwidth for this mirror is donated by{' '}
-                <img class="h-[1em] inline" src="/adfinis.png" /> to the
-                open-source and free software community.
+                A service operated by{' '}
+                <img class="h-[1.5em] inline" src="/adfinis.png" /> and
+                <img
+                    class="h-[2.5em] inline"
+                    src="/powered-by-exoscale.svg"
+                />{' '}
             </span>
         </>
     );
