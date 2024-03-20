@@ -1,4 +1,7 @@
 repos:
+  - name: Almalinux
+    official: false
+
   - name: Alpine
     help: |
       Add the following lines to your **/etc/apk/repositories**:
@@ -10,13 +13,11 @@ repos:
       https://pkg.adfinis.com/alpine/v3.7/main
       ```
     additional: https://mirrors.alpinelinux.org/
-    official: true
+    official: false
 
   - name: Arch Linux
     help: |
-      Since we are officially listed, you may just uncomment our mirror in /etc/pacman.d/mirrorlist.
-
-      In other cases, you may add these lines to your **/etc/pacman.d/mirrorlist**:
+      You may add these lines to your **/etc/pacman.d/mirrorlist**:
 
       ```
       Server = https://pkg.adfinis.com/archlinux/$repo/os/$arch
@@ -24,36 +25,31 @@ repos:
       ```
 
     additional: https://www.archlinux.org/mirrors/adfinis.com/
-    official: true
+    official: false
     localName: archlinux
 
   - name: CentOS
     help: |
-      Since we are officially listed, you don't need to configure anything special.
-      Yum gets a computed list from [here](http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os).
-
-      If you wish, you can change the baseurl in **/etc/yum.repos.d/CentOS-Base.repo**:
+      You can change the baseurl in **/etc/yum.repos.d/CentOS-Base.repo**:
 
       ```
       baseurl=http://pkg.adfinis.com/centos/$releasever/os/$basearch
       ```
     additional: http://mirror-status.centos.org/#ch
-    official: true
-        
+    official: false
+
 
   - name: CentOS Stream
-    official: true
-        
+    official: false
+
   - name: openSUSE
-    help: Since we are officially listed, our mirror will be automatically selected if it fits best to your location.
-    additional: http://mirrors.opensuse.org/
-    official: true
+    official: false
 
   - name: Debian
     help: |
       Add the following lines to your **/etc/apt/sources.list**:
 
-      Replace "bullseye" with your release.
+      Replace "bookworm" with your release.
 
       ```
       deb http://pkg.adfinis.com/debian/ bookworm main non-free non-free-firmware contrib
@@ -65,22 +61,17 @@ repos:
       deb http://pkg.adfinis.com/debian/ bookworm-updates main contrib non-free non-free-firmware
       deb-src http://pkg.adfinis.com/debian/ bookworm-updates main contrib non-free non-free-firmware
       ```
-    additional: https://mirror-master.debian.org/status/mirror-status.html 
-    official: true
+    additional: https://mirror-master.debian.org/status/mirror-status.html
+    official: false
 
   - name: EPEL
-    help: |
-      Since we are officially listed, you can just install the corresponding epel-release package on your system:
+    official: false
 
-      ```
-      yum install http://pkg.adfinis.com/epel/epel-release-latest-5.noarch.rpm
-      yum install http://pkg.adfinis.com/epel/epel-release-latest-6.noarch.rpm
-      yum install http://pkg.adfinis.com/epel/epel-release-latest-7.noarch.rpm
-      ```
+  - name: Fedora
+    official: false
 
-      Yum will then get a computed list from [here](https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch).
-    additional: https://admin.fedoraproject.org/mirrormanager/mirrors
-    official: true
+  - name: Gentoo
+    official: false
 
   - name: Ubuntu
     help: |
@@ -103,31 +94,32 @@ repos:
       # deb-src http://pkg.adfinis.com/ubuntu vivid-security main restricted universe multiverse
       ```
     additional: https://launchpad.net/ubuntu/+mirror/pkg.adfinis.com-archive
-    official: true
+    official: false
 
-
+  - name: Rockylinux
+    official: false
 
   - name: Arch Linux Debug
-    help: |   
+    help: |
       This repository has been provided to those interested in accessing debug packages.
       Besides debug packages, it includes everything including very old versions.
 
-      Add/replace the following lines to your **/etc/pacman.d/mirrorlist**: 
+      Add/replace the following lines to your **/etc/pacman.d/mirrorlist**:
       ```
       Server = https://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
       Server = http://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
       ```
     localName: archlinux-pkgbuild
-    
+
   - name: Debian Security
     help: |
       Add the following lines to your **/etc/apt/sources.list**:
 
-      Replace "bullseye" with your release.
+      Replace "bookworm" with your release.
 
       ```
-      deb http://pkg.adfinis.com/debian-security bullseye-security main contrib non-free
-      deb-src http://pkg.adfinis.com/debian-security bullseye-security main contrib non-free
+      deb http://pkg.adfinis.com/debian-security bookworm-security main contrib non-free
+      deb-src http://pkg.adfinis.com/debian-security bookworm-security main contrib non-free
       ```
 
   - name: Manjaro
@@ -141,17 +133,3 @@ repos:
       Server = http://pkg.adfinis.com/manjaro/<branch>/$repo/$arch
       ```
     imageExtension: svg
-
-  - name: NodeJS
-    help: |
-      NodeJS 7.x is mirrored for the following Distributions:
-      Ubuntu: sid, trusty, xenial, yakkety and zesty
-      Debian: jessie
-
-      Add the following lines to your **/etc/apt/sources.list**:
-
-      Replace "jessie" with your corresponding release.
-
-      ```
-      deb http://pkg.adfinis.com/nodejs/node_7.x jessie main
-      ```
