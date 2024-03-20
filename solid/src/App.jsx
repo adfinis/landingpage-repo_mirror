@@ -23,18 +23,22 @@ function App() {
         <>
             <h1 class="text-adfinis-blue my-5">Welcome to pkg.adfinis.com</h1>
             <Show fallback={<p>...loading</p>} when={repos()}>
-                <h2 class="text-black mb-2">Official Mirrors</h2>
-                <RepoContainer>
-                    <For each={repos().filter((r) => r.official)}>
-                        {(repo) => <Repo {...repo} />}
-                    </For>
-                </RepoContainer>
-                <h2 class="text-black mb-2">Unofficial Mirrors</h2>
-                <RepoContainer>
-                    <For each={repos().filter((r) => !r.official)}>
-                        {(repo) => <Repo {...repo} />}
-                    </For>
-                </RepoContainer>
+                <Show when={repos().filter((r) => r.official).length}>
+                    <h2 class="text-black mb-2">Official Mirrors</h2>
+                    <RepoContainer>
+                        <For each={repos().filter((r) => r.official)}>
+                            {(repo) => <Repo {...repo} />}
+                        </For>
+                    </RepoContainer>
+                </Show>
+                <Show when={repos().filter((r) => !r.official).length}>
+                    <h2 class="text-black mb-2">Unofficial Mirrors</h2>
+                    <RepoContainer>
+                        <For each={repos().filter((r) => !r.official)}>
+                            {(repo) => <Repo {...repo} />}
+                        </For>
+                    </RepoContainer>
+                </Show>
             </Show>
             <span class="sticky top-[100%] text-gray-700 text-center">
                 The hardware and bandwidth for this mirror is donated by{' '}
