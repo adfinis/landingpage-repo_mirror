@@ -1,4 +1,7 @@
 repos:
+  - name: Almalinux
+    official: false
+
   - name: Alpine
     help: |
       Add the following lines to your **/etc/apk/repositories**:
@@ -64,6 +67,12 @@ repos:
   - name: EPEL
     official: false
 
+  - name: Fedora
+    official: false
+
+  - name: Gentoo
+    official: false
+
   - name: Ubuntu
     help: |
       Add the following lines to your **/etc/apt/sources.list**:
@@ -87,7 +96,8 @@ repos:
     additional: https://launchpad.net/ubuntu/+mirror/pkg.adfinis.com-archive
     official: false
 
-
+  - name: Rockylinux
+    official: false
 
   - name: Arch Linux Debug
     help: |
