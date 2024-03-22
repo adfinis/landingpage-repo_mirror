@@ -44,11 +44,16 @@ function App() {
             </Show>
             <span class="sticky top-[100%] text-gray-700 text-center">
                 A service operated by{' '}
-                <img class="h-[1.5em] inline" src="/adfinis.png" /> and
-                <img
-                    class="h-[2.5em] inline"
-                    src="/powered-by-exoscale.svg"
-                />{' '}
+                <a href="https://adfinis.com">
+                    <img class="h-[1.5em] inline" src="/adfinis.png" />{' '}
+                </a>
+                and
+                <a href="https://www.exoscale.com/">
+                    <img
+                        class="h-[2.5em] inline"
+                        src="/powered-by-exoscale.svg"
+                    />
+                </a>{' '}
             </span>
         </>
     );
