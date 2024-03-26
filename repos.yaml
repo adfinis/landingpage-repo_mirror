@@ -86,21 +86,21 @@ repos:
     help: |
       Add the following lines to your **/etc/apt/sources.list**:
 
-      Replace "vivid" with your release.
+      Replace "noble" with your release.
 
       ```
-      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ vivid main restricted universe multiverse
-      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ vivid main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble main restricted universe multiverse
 
-      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ vivid-updates main restricted universe multiverse
-      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ vivid-updates main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-updates main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-updates main restricted universe multiverse
 
 
-      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ vivid-backports main restricted universe multiverse
-      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ vivid-backports main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-backports main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-backports main restricted universe multiverse
 
-      deb http://pkg.adfinis-on-exoscale.ch/ubuntu vivid-security main restricted universe multiverse
-      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu vivid-security main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu noble-security main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu noble-security main restricted universe multiverse
       ```
     additional: https://launchpad.net/ubuntu/+mirror/pkg.adfinis-on-exoscale.ch-archive
     official: false
