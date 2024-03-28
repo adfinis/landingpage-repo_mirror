@@ -37,6 +37,17 @@ repos:
     official: false
     localName: archlinux
 
+  - name: CentOS
+    help: |
+      You can change the baseurl in **/etc/yum.repos.d/CentOS-Base.repo**:
+
+      ```
+      baseurl=http://pkg.adfinis-on-exoscale.ch/centos/$releasever/os/$basearch
+      ```
+    additional: http://mirror-status.centos.org/#ch
+    official: false
+
+
   - name: CentOS Stream
     official: false
 
