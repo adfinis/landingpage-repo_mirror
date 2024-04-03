@@ -6,11 +6,15 @@ repos:
     help: |
       Add the following lines to your **/etc/apk/repositories**:
 
-      Replace "v3.7" with your release.
+      Replace "v3.19" with your release.
 
       ```
-      http://pkg.adfinis.com/alpine/v3.7/main
-      https://pkg.adfinis.com/alpine/v3.7/main
+      http://pkg.adfinis-on-exoscale.ch/alpine/v3.7/main
+      https://pkg.adfinis-on-exoscale.ch/alpine/v3.7/main
+      ```
+      After making changes to /etc/apk/repositories you should update the package index using:
+      ```
+      apk update
       ```
     additional: https://mirrors.alpinelinux.org/
     official: false
@@ -20,11 +24,16 @@ repos:
       You may add these lines to your **/etc/pacman.d/mirrorlist**:
 
       ```
-      Server = https://pkg.adfinis.com/archlinux/$repo/os/$arch
-      Server = http://pkg.adfinis.com/archlinux/$repo/os/$arch
+      Server = https://pkg.adfinis-on-exoscale.ch/archlinux/$repo/os/$arch
+      Server = http://pkg.adfinis-on-exoscale.ch/archlinux/$repo/os/$arch
       ```
 
-    additional: https://www.archlinux.org/mirrors/adfinis.com/
+      After creating/editing **/etc/pacman.d/mirrorlist**, issue the following command:
+      ```
+      pacman -Syy
+      ```
+
+    additional: https://www.archlinux.org/mirrors/adfinis-on-exoscale.ch/
     official: false
     localName: archlinux
 
@@ -33,7 +42,7 @@ repos:
       You can change the baseurl in **/etc/yum.repos.d/CentOS-Base.repo**:
 
       ```
-      baseurl=http://pkg.adfinis.com/centos/$releasever/os/$basearch
+      baseurl=http://pkg.adfinis-on-exoscale.ch/centos/$releasever/os/$basearch
       ```
     additional: http://mirror-status.centos.org/#ch
     official: false
@@ -52,14 +61,14 @@ repos:
       Replace "bookworm" with your release.
 
       ```
-      deb http://pkg.adfinis.com/debian/ bookworm main non-free non-free-firmware contrib
-      deb-src http://pkg.adfinis.com/debian/ bookworm main non-free non-free-firmware contrib
+      deb http://pkg.adfinis-on-exoscale.ch/debian/ bookworm main non-free non-free-firmware contrib
+      deb-src http://pkg.adfinis-on-exoscale.ch/debian/ bookworm main non-free non-free-firmware contrib
 
       deb http://security.debian.org/ bookworm-security main
       deb-src http://security.debian.org/ bookworm-security main
 
-      deb http://pkg.adfinis.com/debian/ bookworm-updates main contrib non-free non-free-firmware
-      deb-src http://pkg.adfinis.com/debian/ bookworm-updates main contrib non-free non-free-firmware
+      deb http://pkg.adfinis-on-exoscale.ch/debian/ bookworm-updates main contrib non-free non-free-firmware
+      deb-src http://pkg.adfinis-on-exoscale.ch/debian/ bookworm-updates main contrib non-free non-free-firmware
       ```
     additional: https://mirror-master.debian.org/status/mirror-status.html
     official: false
@@ -77,23 +86,23 @@ repos:
     help: |
       Add the following lines to your **/etc/apt/sources.list**:
 
-      Replace "vivid" with your release.
+      Replace "noble" with your release.
 
       ```
-      deb http://pkg.adfinis.com/ubuntu/ vivid main restricted universe multiverse
-      # deb-src http://pkg.adfinis.com/ubuntu/ vivid main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble main restricted universe multiverse
 
-      deb http://pkg.adfinis.com/ubuntu/ vivid-updates main restricted universe multiverse
-      # deb-src http://pkg.adfinis.com/ubuntu/ vivid-updates main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-updates main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-updates main restricted universe multiverse
 
 
-      deb http://pkg.adfinis.com/ubuntu/ vivid-backports main restricted universe multiverse
-      # deb-src http://pkg.adfinis.com/ubuntu/ vivid-backports main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-backports main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu/ noble-backports main restricted universe multiverse
 
-      deb http://pkg.adfinis.com/ubuntu vivid-security main restricted universe multiverse
-      # deb-src http://pkg.adfinis.com/ubuntu vivid-security main restricted universe multiverse
+      deb http://pkg.adfinis-on-exoscale.ch/ubuntu noble-security main restricted universe multiverse
+      # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu noble-security main restricted universe multiverse
       ```
-    additional: https://launchpad.net/ubuntu/+mirror/pkg.adfinis.com-archive
+    additional: https://launchpad.net/ubuntu/+mirror/pkg.adfinis-on-exoscale.ch-archive
     official: false
 
   - name: Rockylinux
@@ -106,8 +115,8 @@ repos:
 
       Add/replace the following lines to your **/etc/pacman.d/mirrorlist**:
       ```
-      Server = https://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
-      Server = http://pkg.adfinis.com/archlinux-pkgbuild/$repo/os/$arch
+      Server = https://pkg.adfinis-on-exoscale.ch/archlinux-pkgbuild/$repo/os/$arch
+      Server = http://pkg.adfinis-on-exoscale.ch/archlinux-pkgbuild/$repo/os/$arch
       ```
     localName: archlinux-pkgbuild
 
@@ -118,8 +127,8 @@ repos:
       Replace "bookworm" with your release.
 
       ```
-      deb http://pkg.adfinis.com/debian-security bookworm-security main contrib non-free
-      deb-src http://pkg.adfinis.com/debian-security bookworm-security main contrib non-free
+      deb http://pkg.adfinis-on-exoscale.ch/debian-security bookworm-security main contrib non-free
+      deb-src http://pkg.adfinis-on-exoscale.ch/debian-security bookworm-security main contrib non-free
       ```
 
   - name: Manjaro
@@ -129,7 +138,7 @@ repos:
       Replace "<branch>" with your desired branch (for example stable for x86_64 or arm-stable for arm)
 
       ```
-      Server = https://pkg.adfinis.com/manjaro/<branch>/$repo/$arch
-      Server = http://pkg.adfinis.com/manjaro/<branch>/$repo/$arch
+      Server = https://pkg.adfinis-on-exoscale.ch/manjaro/<branch>/$repo/$arch
+      Server = http://pkg.adfinis-on-exoscale.ch/manjaro/<branch>/$repo/$arch
       ```
     imageExtension: svg
