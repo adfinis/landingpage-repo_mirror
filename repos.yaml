@@ -1,6 +1,9 @@
 repos:
   - name: Almalinux
-    official: false
+    help: |
+      Since we are officially listed, our mirror will be automatically selected if it fits best to your location
+    additional: https://mirrors.almalinux.org/
+    official: true
 
   - name: Alpine
     help: |
