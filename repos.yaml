@@ -50,9 +50,15 @@ repos:
     additional: http://mirror-status.centos.org/#ch
     official: false
 
-
   - name: CentOS Stream
-    official: false
+    help: |
+      Since we are officially listed, you don't need to configure anything special. Yum gets a computed list from http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os.
+      If you wish, you can change the baseurl in /etc/yum.repos.d/CentOS-Base.repo:
+      ```
+      baseurl=http://pkg.adfinis.com/centos/$releasever/os/$basearch
+      ```
+    additional: http://mirror-status.centos.org/#ch
+    official: true
 
   - name: openSUSE
     official: false
@@ -77,7 +83,16 @@ repos:
     official: false
 
   - name: EPEL
-    official: false
+    help: |
+        Since we are officially listed, you can just install the corresponding epel-release package on your system:
+      ```
+      yum install http://pkg.adfinis.com/epel/epel-release-latest-5.noarch.rpm
+      yum install http://pkg.adfinis.com/epel/epel-release-latest-6.noarch.rpm
+      yum install http://pkg.adfinis.com/epel/epel-release-latest-7.noarch.rpm
+      ```
+      Yum will then get a computed list from https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch.
+    additional: https://admin.fedoraproject.org/mirrormanager/mirrors
+    official: true
 
   - name: Fedora
     official: false
