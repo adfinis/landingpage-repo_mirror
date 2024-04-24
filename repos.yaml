@@ -127,7 +127,7 @@ repos:
       # deb-src http://pkg.adfinis-on-exoscale.ch/ubuntu noble-security main restricted universe multiverse
       ```
     additional: https://launchpad.net/ubuntu/+mirror/pkg.adfinis-on-exoscale.ch-archive
-    official: false
+    official: true
 
   - name: Rockylinux
     official: false
