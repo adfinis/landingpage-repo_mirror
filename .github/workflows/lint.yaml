@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  lint:
+  frontend:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -30,3 +30,17 @@ jobs:
       - name: Lint
         run: yarn run lint
         working-directory: solid
+
+  repos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install yamllint
+        run: |
+          pipx install yamllint
+
+      - name: Lint repos.yaml
+        run: |
+          yamllint -f github ./repos.yaml
