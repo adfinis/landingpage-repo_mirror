@@ -2913,19 +2913,19 @@ solid-heroicons@^3.2.4:
   dependencies:
     solid-js "^1.7.6"
 
-solid-js@^1.7.6, solid-js@^1.8.17:
-  version "1.8.17"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.17.tgz#780ed6f0fd8633009d1b3c29d56bf6b6bb33bd50"
-  integrity sha512-E0FkUgv9sG/gEBWkHr/2XkBluHb1fkrHywUgA6o6XolPDCJ4g1HaLmQufcBBhiF36ee40q+HpG/vCZu7fLpI3Q==
+solid-js@^1.7.6, solid-js@^1.8.18:
+  version "1.8.18"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.18.tgz#ef1b28c8d0eea4a3f5242aa142a36d7a7a456da9"
+  integrity sha512-cpkxDPvO/AuKBugVv6xKFd1C9VC0XZMu4VtF56IlHoux8HgyW44uqNSWbozMnVcpIzHIhS3vVXPAVZYM26jpWw==
   dependencies:
     csstype "^3.1.0"
     seroval "^1.0.4"
     seroval-plugins "^1.0.3"
 
-solid-markdown@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.1.tgz#74919870bf70601ab4fa1eb4a735ff5bb25e53e1"
-  integrity sha512-53cTtzleFTYpXydanxmDmxzQFnjx4Xvo0DJqkGznDomBQpd5NrqX+ZK0MEbEd6nH0a7SiFljRPuHnXK6s5hFfA==
+solid-markdown@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.13.tgz#4e67067d0ebddea933c0b23b3f6ed9dc9c05a6be"
+  integrity sha512-IEuR4c5pr51xbVQGjxM2GuZojn8QlaJq1E3WsgEGLx2UQtCAq8ZuyE/ILjYYvV41deWrPvyZb6Ixfsh4O6gH3g==
   dependencies:
     comma-separated-tokens "^2.0.3"
     property-information "^6.3.0"
