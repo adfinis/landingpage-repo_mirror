@@ -64,7 +64,9 @@ repos:
     official: true
 
   - name: openSUSE
-    official: false
+    official: true
+    help: Since we are officially listed, our mirror will be automatically selected if it fits best to your location.
+    additional: http://mirrors.opensuse.org
 
   - name: Debian
     help: |
