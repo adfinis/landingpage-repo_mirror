@@ -18,8 +18,8 @@
     "@solid-primitives/keyboard": "^1.2.8",
     "js-yaml": "^4.1.0",
     "solid-heroicons": "^3.2.4",
-    "solid-js": "^1.8.17",
-    "solid-markdown": "^2.0.1"
+    "solid-js": "^1.8.21",
+    "solid-markdown": "^2.0.13"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.5",

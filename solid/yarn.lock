@@ -2860,15 +2860,15 @@ semver@^7.0.0, semver@^7.5.3, semver@^7.5.4:
   dependencies:
     lru-cache "^6.0.0"
 
-seroval-plugins@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/seroval-plugins/-/seroval-plugins-1.0.4.tgz#917d2cd103525f0238433a49479def0ce65a56e4"
-  integrity sha512-DQ2IK6oQVvy8k+c2V5x5YCtUa/GGGsUwUBNN9UqohrZ0rWdUapBFpNMYP1bCyRHoxOJjdKGl+dieacFIpU/i1A==
+seroval-plugins@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/seroval-plugins/-/seroval-plugins-1.1.1.tgz#1e0c175e13bb4c620d4ce5916fbbb63de70c31f9"
+  integrity sha512-qNSy1+nUj7hsCOon7AO4wdAIo9P0jrzAMp18XhiOzA6/uO5TKtP7ScozVJ8T293oRIvi5wyCHSM4TrJo/c/GJA==
 
-seroval@^1.0.4:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.0.5.tgz#d71ee540d936babaed92f56eda3e52d8e2a3deed"
-  integrity sha512-TM+Z11tHHvQVQKeNlOUonOWnsNM+2IBwZ4vwoi4j3zKzIpc5IDw8WPwCfcc8F17wy6cBcJGbZbFOR0UCuTZHQA==
+seroval@^1.1.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/seroval/-/seroval-1.1.1.tgz#7630e0c17a3efa6be43f17ad6bcf9f966a61b443"
+  integrity sha512-rqEO6FZk8mv7Hyv4UCj3FD3b6Waqft605TLfsCe/BiaylRpyyMC0b+uA5TJKawX3KzMrdi3wsLbCaLplrQmBvQ==
 
 shebang-command@^2.0.0:
   version "2.0.0"
@@ -2913,19 +2913,19 @@ solid-heroicons@^3.2.4:
   dependencies:
     solid-js "^1.7.6"
 
-solid-js@^1.7.6, solid-js@^1.8.17:
-  version "1.8.17"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.17.tgz#780ed6f0fd8633009d1b3c29d56bf6b6bb33bd50"
-  integrity sha512-E0FkUgv9sG/gEBWkHr/2XkBluHb1fkrHywUgA6o6XolPDCJ4g1HaLmQufcBBhiF36ee40q+HpG/vCZu7fLpI3Q==
+solid-js@^1.7.6, solid-js@^1.8.21:
+  version "1.8.21"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.21.tgz#cf7e2618659d233d61424f159300a3379a6b8762"
+  integrity sha512-FHUGdoo7GVa1BTpGh/4UtwIISde0vSXoqNB6KFpHiTgkIY959tmCJ7NYQAWDfScBfnpoMGZR8lFz0DiwW/gFlw==
   dependencies:
     csstype "^3.1.0"
-    seroval "^1.0.4"
-    seroval-plugins "^1.0.3"
+    seroval "^1.1.0"
+    seroval-plugins "^1.1.0"
 
-solid-markdown@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.1.tgz#74919870bf70601ab4fa1eb4a735ff5bb25e53e1"
-  integrity sha512-53cTtzleFTYpXydanxmDmxzQFnjx4Xvo0DJqkGznDomBQpd5NrqX+ZK0MEbEd6nH0a7SiFljRPuHnXK6s5hFfA==
+solid-markdown@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/solid-markdown/-/solid-markdown-2.0.13.tgz#4e67067d0ebddea933c0b23b3f6ed9dc9c05a6be"
+  integrity sha512-IEuR4c5pr51xbVQGjxM2GuZojn8QlaJq1E3WsgEGLx2UQtCAq8ZuyE/ILjYYvV41deWrPvyZb6Ixfsh4O6gH3g==
   dependencies:
     comma-separated-tokens "^2.0.3"
     property-information "^6.3.0"
