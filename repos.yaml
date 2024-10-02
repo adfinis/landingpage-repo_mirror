@@ -75,11 +75,11 @@ repos:
       Replace "bookworm" with your release.
 
       ```
-      deb http://pkg.adfinis-on-exoscale.ch/debian/ bookworm main non-free non-free-firmware contrib
-      deb-src http://pkg.adfinis-on-exoscale.ch/debian/ bookworm main non-free non-free-firmware contrib
+      deb http://pkg.adfinis-on-exoscale.ch/debian/ bookworm main contrib non-free non-free-firmware
+      deb-src http://pkg.adfinis-on-exoscale.ch/debian/ bookworm main contrib non-free non-free-firmware
 
-      deb http://security.debian.org/ bookworm-security main
-      deb-src http://security.debian.org/ bookworm-security main
+      deb http://pkg.adfinis-on-exoscale.ch/debian-security/ bookworm-security main contrib non-free non-free-firmware
+      deb-src http://pkg.adfinis-on-exoscale.ch/debian-security/ bookworm-security main contrib non-free non-free-firmware
 
       deb http://pkg.adfinis-on-exoscale.ch/debian/ bookworm-updates main contrib non-free non-free-firmware
       deb-src http://pkg.adfinis-on-exoscale.ch/debian/ bookworm-updates main contrib non-free non-free-firmware
