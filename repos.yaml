@@ -172,3 +172,27 @@ repos:
       Server = http://pkg.adfinis-on-exoscale.ch/manjaro/<branch>/$repo/$arch
       ```
     imageExtension: svg
+
+  - name: EndeavourOS
+    help: |
+      Add the following lines to your **/etc/pacman.d/mirrorlist**:
+
+      ```
+      Server = https://pkg.adfinis-on-exoscale.ch/archlinux/$repo/os/$arch
+      Server = http://pkg.adfinis-on-exoscale.ch/archlinux/$repo/os/$arch
+      ```
+
+      And the following lines to your **/etc/pacman.d/endeavouros-mirrorlist**:
+
+      ```
+      Server = https://pkg.adfinis-on-exoscale.ch/endeavouros/repo/$repo/$arch
+      Server = http://pkg.adfinis-on-exoscale.ch/endeavouros/repo/$repo/$arch
+      ```
+
+      After creating/editing those two files, issue the following command:
+      ```
+      pacman -Syy
+      ```
+    additional: https://www.archlinux.org/mirrors/adfinis-on-exoscale.ch/
+    official: false
+    localName: endeavouros
