@@ -38,7 +38,7 @@ repos:
       ```
 
     additional: https://www.archlinux.org/mirrors/adfinis-on-exoscale.ch/
-    official: false
+    official: true
     localName: archlinux
 
   - name: CentOS
@@ -85,7 +85,7 @@ repos:
       deb-src http://pkg.adfinis-on-exoscale.ch/debian/ bookworm-updates main contrib non-free non-free-firmware
       ```
     additional: https://mirror-master.debian.org/status/mirror-status.html
-    official: false
+    official: true
 
   - name: EPEL
     help: |
