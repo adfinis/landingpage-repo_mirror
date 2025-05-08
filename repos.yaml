@@ -136,7 +136,10 @@ repos:
     official: true
 
   - name: Rockylinux
-    official: false
+    help: |
+      Since we are officially listed, our mirror will be automatically selected if it fits best to your location
+    additional: https://mirrors.rockylinux.org/mirrormanager/mirrors
+    official: true
 
   - name: Arch Linux Debug
     help: |
