@@ -197,5 +197,5 @@ repos:
       pacman -Syy
       ```
     additional: https://www.archlinux.org/mirrors/adfinis-on-exoscale.ch/
-    official: false
+    official: true
     localName: endeavouros
