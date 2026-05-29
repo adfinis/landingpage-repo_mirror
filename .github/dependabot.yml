@@ -16,6 +16,8 @@ updates:
       actions:
         patterns:
           - "*"
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: npm
     directory: "/solid"
@@ -64,3 +66,5 @@ updates:
           - "@solid-*"
           - "vite"
           - "vite-*"
+    cooldown:
+      default-days: 7
