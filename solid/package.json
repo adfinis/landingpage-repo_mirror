@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@solid-primitives/keyboard": "^1.2.8",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.3.2",
     "solid-heroicons": "^3.2.4",
     "solid-js": "^1.8.17",
     "solid-markdown": "^2.0.1"
